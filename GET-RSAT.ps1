@@ -16,15 +16,14 @@ else
 }
 
 #File location.
-$filedir = ""
+$filedir = ''
 
 #Downloads file and puts it in $filedir.
-{
-    $start_time = Get-Date
 
-    Start-BitsTransfer -Source $RSAT_url -Destination $filedir
+$start_time = Get-Date
 
-    Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
+Start-BitsTransfer -Source $RSAT_url -Destination $filedir
 
-    Start-Sleep -s 3
-}
+Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
+
+Start-Sleep -s 2
