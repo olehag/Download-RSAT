@@ -6,7 +6,8 @@
 $filedir = "c:\installfiles"
 
 if((Test-Path $filedir) -eq 0)
-{ 
+{
+    #Creates $filedir, if it dosn't exist.
     mkdir $filedir
     Clear-Host
 
