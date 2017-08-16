@@ -53,7 +53,10 @@ Write-Host "File downloaded to: $filedir, " -NoNewline
 Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
 Write-Host
 
-#Press a button to exit
+#Install RSAT from $filedir.
+Invoke-Item $filedir/Windows*.msu
+
+#Press a button to exit.
 Write-Host ""
 Write-Host "Press any button to exit..." -ForegroundColor Yellow
 $x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
