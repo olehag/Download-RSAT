@@ -26,8 +26,8 @@ if((Test-Path $filedir) -eq 0)
 import-module bitstransfer
 
 #Remote Server Administration Tools download location.
-$RSATx64_url = 'https://download.microsoft.com/download/1/D/8/1D8B5022-5477-4B9A-8104-6A71FF9D98AB/WindowsTH-RSAT_WS2016-x64.msu'
-$RSATx86_url = 'https://download.microsoft.com/download/1/D/8/1D8B5022-5477-4B9A-8104-6A71FF9D98AB/WindowsTH-RSAT_WS2016-x86.msu'
+$RSATx64_url = 'https://download.microsoft.com/download/1/D/8/1D8B5022-5477-4B9A-8104-6A71FF9D98AB/WindowsTH-RSAT_WS_1709-x64.msu'
+$RSATx86_url = 'https://download.microsoft.com/download/1/D/8/1D8B5022-5477-4B9A-8104-6A71FF9D98AB/WindowsTH-RSAT_WS_1709-x86.msu'
 
 if([environment]::Is64BitOperatingSystem -eq $True )
 {
