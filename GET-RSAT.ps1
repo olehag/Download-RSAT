@@ -1,7 +1,3 @@
-#Lord Hagen / olehag04@nfk.no
-#Windows 10 RSAT Downloader!
-
-
 #File location.
 $filedir = "c:\installfiles"
 
@@ -41,7 +37,7 @@ else
 }
 
 
-#Downloads file and puts it in $filedir.
+#Downloads file and moves it to $filedir.
 
 $start_time = Get-Date
 
